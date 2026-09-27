@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.photo{
+    height:620px;
+    width: 1536px;
+    margin: 0px;
+    padding: 0px;
+    border-top: 3px solid rgb(171, 130, 25);
+}
+.photo img{
+    height: 520px;
+    width: 1536px; 
+    border-bottom: 4px solid rgb(248, 179, 5);
+}
+
+.contact-us{
+    color: white;
+    font-size: 141px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 5px 5px 17px rgb(4, 4, 4);
+    position: absolute;
+    top: 335px;
+    right: 50px;
+}
+/* .overlay{  */
+    /* position: absolute;  */
+    /* margin-top: 7px; */
+    /* top: 0;  */
+    /* left: 0;  */
+    /* width: 100%;  */
+    /* height: 69.3%;  */
+    /* border-top: 3px solid rgb(171, 130, 25); */
+    /* border-bottom: 3px solid rgb(248, 179, 5); */
+    /* background: rgba(0,0,0,0.3);  */
+    /* z-index: 0;  */
+/* } */
+/*  */
+/* ----------------------------------------------------navbar-------------------------------------------------------------- */
+.navbar{
+    margin-top: -600px;
+    margin-bottom: 20px;
+    border-top: 2px solid rgb(248, 179, 5);
+    border-bottom: 2px solid rgb(248, 179, 5);
+}
+
+.container-fluid{
+    background-color: rgba(6, 59, 88, 0.529);
+    background-color: rgba(245, 243, 240, 0.4);
+}
+/* ----logout button---- */
+.logout{
+    color: white ;
+    background-image: linear-gradient(to bottom,rgb(185, 14, 14),red);
+    font-size: 19px;
+    font-weight: 600;
+    transition: background-image 2s ease;
+}
+.logout:hover{
+    color: whitesmoke;
+    background-image: linear-gradient(to top,rgb(124, 30, 6),orange);
+}
+
+
+.navbar-nav{
+    display:flex;
+    gap: 5px;
+}
+.navbar-brand{
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 37px;
+    text-shadow: 5px 4px 5px rgb(9, 10, 10);
+}
+/*----------- home,books,login.....---- */
+.nav-element{
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-element:hover{
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,rgb(67, 203, 213),rgba(32, 143, 190, 0.288));
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    
+}
+
+/* --------------button of modal---------------- */
+.btn-login{
+    background-color: #3b5a7b;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+.btn-login:hover{
+    background-image: radial-gradient(circle,#42a0bd,#206276);
+    border: 2px solid rgb(78, 59, 10);
+    transform: translateY(-5px);
+}
+
+
+/*------ logo ---------*/
+.navbar-brand img{
+    height: 65px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+/* modal */
+/* .modal-title{ */
+    /* font-size: 30px; */
+/* } */
+
+/* -------------------------------------------details--------------------------------------------------- */
+
+.detail-container{
+    margin-top: 410px;
+    height: 800px;
+    width: 1536px;
+    padding: 50px;
+    background-image: linear-gradient(to bottom,rgba(3, 59, 91, 0.226),white);
+    position: relative;
+}
+
+/* ----------big size image ------------ */
+.detail-image{
+    padding: 50px;
+    height: 860px;
+    width: 400px;
+    background-color: beige;
+    position: absolute;
+    top: -130px;
+    border-radius: 200px;
+    background-image: url("/image/lib1.jpg");
+    background-size: cover;
+    /* background-position: center; */
+
+    border: 4px solid goldenrod;
+    box-shadow: 2px 2px 20px rgb(246, 245, 245),20px 20px 30px grey,30px 30px 50px black;
+}
+
+/* parent container of details */
+.details{
+    height: 500px;
+    width: 440px;
+    margin-left: 330px;
+    margin-top: 30px;
+    position: absolute;   
+}
+/* child of detail conatainer */
+.d-detail{
+    height:90px;
+    width: 400px;
+    padding: 7px;
+    padding-left: 17px;
+    background-color: rgb(247, 250, 252);
+    box-shadow:  1px 2px 10px rgb(246, 245, 245),8px 8px 20px grey;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    margin: 20px;
+
+    transition: all 1s ease ;
+    transform:1s;
+}
+.d-detail:hover{
+    background-image:radial-gradient(circle,rgba(231, 234, 235, 0.827),rgba(191, 169, 46, 0.325)) ;
+    border-radius: 20px;
+    transform: translateX(30px);
+}
+
+.d-detail h2{
+    font-size: 25px;
+    color: navy;
+     font-family: "Playfair Display", serif;
+     font-optical-sizing: auto;
+     font-weight: 900;
+     font-style: normal;
+}
+
+.d-detail p{
+     font-family: "Playfair Display", serif;
+     font-optical-sizing: auto;
+     font-weight: 700;
+     font-style: normal;
+}
+
+/* -------------------------------------------contact form----------------------------------------------------- */
+.form{
+    margin-top: 40px;
+    margin-left: 850px;
+}
+
+.form-control{
+    border: 2px solid #aea52a;
+    border-radius: 10px;
+    height: 45px;
+    font-family: 'poppins';
+    outline: none;
+    transition: all 0.3s ease;
+    resize: none;
+}
+legend{
+    font-size: 60px;
+    text-shadow: 3px 3px 10px rgb(132, 132, 129) ;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.form-label{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;   
+}
+.message{
+    height: 100px;
+}
+
+/*---------- button--------------- */
+.con{
+    display: flex;
+    gap:7px ;
+}
+.c-button{
+    height: 45px;
+    width: 150px;
+    margin-top: 18px;
+    margin-left: 5px;
+    border-radius: 15px;
+    /* background-color: rgb(17, 217, 248); */
+    background-image: radial-gradient(circle,white, rgb(12, 144, 185));
+    border: 3px solid rgb(215, 161, 25);
+    box-shadow: 4px 4px 15px grey;
+
+    font-family: "Hepta Slab", serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-size: 22px;
+    font-style: normal;
+
+    transition: all 1s ease;
+    transform: 0.2s;
+}
+.c-button:hover{
+    background-image: linear-gradient(to right,beige,rgb(209, 209, 98));
+    /* transform: translateY(-10px); */
+}
+
+/* -------icons---------- */
+.c-list{
+    margin-top: 30px;
+    margin-left: 190px;
+    list-style: none;
+    height: 40px;
+}
+
+.fa-brands{
+    margin-left: 10px;
+    font-size: 35px;
+    color: #948c1d;
+    transition: all 1s ease;
+    /* transform: 1s; */
+}
+
+.fa-brands:hover{
+    color: navy;
+    transform: translateY(-16px);
+}
+
+/* ---------------------------------map-location-------------------------------------------- */
+/* .location{ */
+    /* height: 500px; */
+    /* width: 1530px; */
+    /* background-color: #948c1d; */
+    /* background-image: linear-gradient(to right bottom,white,#eeeab0ee); */
+/* } */
+/* .map{ */
+    /* height: 400px; */
+    /* width: 1000px; */
+    /* background-color: #948c1d; */
+/*  */
+/* } */
+/* .map img{ */
+    /* background-size: cover; */
+/* } */
+
+/* -----------------------------------------footer--------------------------------------------------------- */
+
+
+.footer-section{
+    height: 550px;
+    width: 100%;
+    background-color: black;
+    border-top: 5px solid goldenrod;
+    background-image: linear-gradient(to bottom,rgb(3, 48, 76),rgba(0, 0, 0, 0.029),rgba(0, 0, 0, 0.029),rgba(0, 0, 0, 0.029),rgb(3, 48, 76));
+
+    display: flex;
+    flex-direction: column;
+}
+.main-foot{
+    margin-top: 20px;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot1{
+
+    padding-top: 50px;
+    height: 450px;
+    width: 300px;
+    color: white;
+
+    /* background-color: #0e8a91; */
+    /* font-family: "Playfair Display", serif; */
+    /* font-optical-sizing: auto; */
+    /* font-size: 15px; */
+    /* font-weight: 600; */
+    /* font-style: normal;   */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foot1 p{
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.f-logo{
+    margin-bottom: 30px;
+    height: 130px;
+    width: 150px;
+}
+
+.f-logo img{
+    height: 130px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid goldenrod;
+}
+.foot2{
+    padding-top: 50px;
+    height: 400px;
+    width: 250px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+.foot2 li a{
+    color: white;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+.foot2 li a:hover{
+    color: rgb(8, 203, 217);
+    font-size: 20px;
+    font-weight: 600;
+}
+.foot2 p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+}
+
+.foot3{
+    padding-top: 50px;
+    height: 400px;
+    width: 250px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.foot4{
+    padding-top: 50px;
+    height: 400px;
+    width: 350px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* .f-list{ */
+    /* list-style: none; */
+    /* margin-left: -20px; */
+/* } */
+.category-sec{
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 22px;
+    color: #7f7817;
+    transition: all 1s ease;
+    /* transform: 1s; */
+}
+.category-sec:hover{
+    color: rgb(193, 217, 234);
+    transform: translateY(-12px);
+}
+
+.footer-section h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;  
+    color: #c28904;    
+}
+.footer-section li{
+    font-size: 18px;
+}
+.timing{
+    color: white;
+    background-color: black;
+}
+.timing h3{
+    margin-top: 20px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;  
+    color: #c28904;       
+}
+.timing li{
+    font-size: 15px;
+}
+/* -----------------copyright------------------- */
+hr{
+    color:white;
+}
+
+.copy-right{
+    font-size: 20px;
+    color: rgb(253, 252, 252);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;  
+
+}

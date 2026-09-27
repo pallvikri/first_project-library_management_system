@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/user-dashboard.css">
+
+  <!-- for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- p of greet -->
+  <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+  <!-- h2 of greet -->
+  <link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <!-- name -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+  <!-- h4 of stats -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <!-- s-heading -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="sidebar">
+      <div class="photo"><img src="/image/logo2.avif" alt=""></div>
+      <div class="admin">
+        <h1>Muskan Kumari</h1>
+        <h3>Library member</h3>
+      </div>
+      <ul>
+        <div id="simple-list-example" class="d-flex flex-column simple-list-example-scrollspy">
+          <li><a class="p-1 rounded" href="#simple-list-item-1"><i class="fa-solid fa-chart-bar"></i>Dashboard</a></li>
+          <li><a class="p-1 rounded" href="#simple-list-item-2"><i class="fa-solid fa-book"></i> My Borrowed Books</a></li>
+          <li><a class="p-1 rounded" href="#simple-list-item-3"><i class="fa-solid fa-clock-rotate-left"></i> Reading History</a></li>
+          <li><a class="p-1 rounded" href="#simple-list-item-4"><i class="fa-solid fa-heart"></i>Favourite Books</a></li>
+          <button type="button" class="logout btn ">LOGOUT</button>
+          <a class="home" href="home_page.html"><i class="fa-regular fa-house"></i> Home</a>
+
+        </div>
+      </ul>
+
+    </div>
+
+    <!-- -------------------------------------main content---------------------------------------------- -->
+
+    <div class="main">
+      <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true"
+        class="scrollspy-example" tabindex="0">
+
+        <!-- ------------------------------------dashboard--------------------------------------------------- -->
+        <!-- ------------------------------------dashboard--------------------------------------------------- -->
+        <!-- ------------------------------------dashboard--------------------------------------------------- -->
+        <h4 id="simple-list-item-1"></h4>
+        <div class="dashboard ">
+
+          <div class="side"></div>
+          <div class="greet">
+            <h2>Welcome back ,<span> Muskan </span>🥰!</h2>
+            <p>let curiosity lead your reading journey...</p>
+          </div>
+          <div class="side-photo"><img src="/image/lib2.jpeg" alt="">
+            <div class="sp-div1"><img src="/image/admin.jpg" alt=""></div>
+            <div class="d-modal">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                About Me
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title " id="staticBackdropLabel">About Me</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body d-flex">
+                      <div class="me-photo"><img src="/image/admin.jpg" alt=""></div>
+                      <div class="my-info">
+                        <h2>MUSKAN KUMARI</h2>
+                        <p>E-MAIL :</p>
+                        <p>CONTACT :</p>
+                        <p>USER ID :</p>
+                        <p>PASSWORD :</p>
+                        <p>Join Date:</p>
+                      </div>
+                      <div class="my-info1">
+                        <p>muskankri30@gmail.com</p>
+                        <p>9508262258</p>
+                        <p>U12345</p>
+                        <p>Mussu@123</p>
+                        <p>01/01/2026</p>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary"><i
+                          class="fa-solid fa-pen-to-square"></i>Edit</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- -----------------------------------------------stats----------------------------------------------------- -->
+          <div class="dash">
+            <div class="d-div d-div1">
+              <div class="icon"><i class="fa-solid fa-book"></i></div>
+              <h4>Borrowed Books</h4>
+              <h2>5</h2>
+            </div>
+            <div class="d-div d-div2">
+              <div class="icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <h4>Due Soon</h4>
+              <h2>2</h2>
+            </div>
+            <div class="d-div d-div3">
+              <div class="icon"><i class="fa-solid fa-book-open-reader"></i></div>
+              <h4>Books Read</h4>
+              <h2>12</h2>
+            </div>
+            <div class="d-div d-div4">
+              <div class="icon"><i class="fa-solid fa-heart"></i></i></div>
+              <h4>favourite Type</h4>
+              <h2>Fiction</h2>
+            </div>
+          </div>
+
+          <!-- ---------------------------------------------------------------------------------------- -->
+          <div class="s-heading">
+            <p><i class="fa-solid fa-clover"></i>"here's your library snapshot for today."</p>
+          </div>
+
+          <!-- ---------------------------------------------------------------------------------------- -->
+          <div class="recent">
+            <div class="rec rec1">
+              <h4>you borrowed:</h4>
+              <p>First Love Yourself Then Others</p>
+            </div>
+            <div class="rec rec2">
+              <h4>you returned:</h4>
+              <p>The Fellowship Of The Ring</p>             
+            </div>
+          </div>
+
+        </div>
+      
+<hr><hr><hr>
+
+
+<!-- /* ---------------------------------------------my borrowed books---------------------------------------------------- */ -->
+<!-- /* ---------------------------------------------my borrowed books---------------------------------------------------- */ -->
+<!-- /* ---------------------------------------------my borrowed books---------------------------------------------------- */ -->
+    <div class="borrowed">
+      <div class="b-books"><h4 id="simple-list-item-2"><i class="fa-solid fa-book"></i> My Borrowed Books</h4></div>
+
+      <br><br>
+      <div class="b-table">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+              <th scope="col">S.no</th>
+              <th scope="col">Book Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Borrow Date</th>
+              <th scope="col">Return Date</th>
+              <th scope="col">Status</th>
+            </tr>           
+          </thead>
+          <tbody>          
+            <tr>
+              <th scope="row">1</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>20 Feb</td>
+              <td>28 Feb</td>
+              <td>🔴 Over Due</td>
+            </tr>    
+            <tr>
+              <th scope="row">2</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>21 Feb</td>
+              <td>06 March</td>
+              <td>🟡 Due Soon</td>
+            </tr>                     
+            <tr>
+              <th scope="row">3</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>20 Feb</td>
+              <td>10 March</td>
+              <td>🟢 Active</td>
+            </tr>   
+            <tr>
+              <th scope="row">4</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>01 Mrach</td>
+              <td>20 March</td>
+              <td>🟢 Active</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Feb</td>
+              <td>15 March</td>
+              <td>🟢 Active</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>25 Feb</td>
+              <td>30 March</td>
+              <td>🟢 Active</td>
+            </tr>                                    
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!-- ------------------------------online book reading progress------------------------------ -->
+      <div class="o-b-p"><h4><i class="fa-solid fa-ranking-star"></i> Online book's reading progress</h4></div>
+      <div class="p-info">
+          <p class="info1">📖 Currently Reading :</p>
+          <p class="info2"> The tubewell house - abhishek choudhary</p>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+      </div>
+
+      <div class="p-info">
+          <p class="info1">⏸️ Paused Reading :</p>
+          <p class="info2"> Harry Potter and the Sorcerer's Stone - J. K. Rowling</p>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+      </div>
+
+      <div class="p-info">
+          <p class="info1">✅ Currently Completed :</p>
+          <p class="info2"> Harry Potter and the Philosopher's Stone - J. K. Rowling</p>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+      </div>
+    </div>
+
+    <hr><hr><hr>
+
+
+<!-- /* ----------------------------------------------reading history---------------------------------------------------- */ -->
+<!-- /* ----------------------------------------------reading history---------------------------------------------------- */ -->
+<!-- /* ----------------------------------------------reading history---------------------------------------------------- */ -->
+
+      <div class="history">
+      <div class="r-history"><h4 id="simple-list-item-3"><i class="fa-solid fa-clock-rotate-left"></i> Reading History</h4></div>
+
+      <br><br>
+      <div class="r-table">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+              <th scope="col">S.no</th>
+              <th scope="col">Book Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Borrow Date</th>
+              <th scope="col">Return Date</th>
+              <th scope="col">Year</th>
+              <th scope="col">Status</th>
+            </tr>           
+          </thead>
+          <tbody>          
+             <tr>
+              <th scope="row">01</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>20 Feb</td>
+              <td>28 Feb</td>
+              <td>2026</td>
+              <td>🔴 Over Due</td>
+            </tr>    
+            <tr>
+              <th scope="row">02</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>21 Feb</td>
+              <td>06 March</td>
+              <td>2026</td>
+              <td>🟡 Due Soon</td>
+            </tr>                     
+            <tr>
+              <th scope="row">03</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>20 Feb</td>
+              <td>10 March</td>
+              <td>2026</td>
+              <td>🟢 Active</td>
+            </tr>   
+            <tr>
+              <th scope="row">04</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>01 Mrach</td>
+              <td>20 March</td>
+              <td>2026</td>
+              <td>🟢 Active</td>
+            </tr>
+            <tr>
+              <th scope="row">05</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Feb</td>
+              <td>15 March</td>
+              <td>2026</td>
+              <td>🟢 Active</td>
+            </tr>
+            <tr>
+              <th scope="row">06</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>27 Feb</td>
+              <td>30 March</td>
+              <td>2026</td>
+              <td>🟢 Active</td>
+            </tr>    
+             <tr>
+              <th scope="row">07</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>02 Feb</td>
+              <td>28 Feb</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>    
+            <tr>
+              <th scope="row">08</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>01 Feb</td>
+              <td>16 Feb</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>                     
+            <tr>
+              <th scope="row">09</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>30 Jan</td>
+              <td>10 Feb</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>   
+            <tr>
+              <th scope="row">10</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>21 Jan</td>
+              <td>10 Feb</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Jan</td>
+              <td>15 Feb</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>12 Jan</td>
+              <td>30 Jan</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>   
+             <tr>
+              <th scope="row">13</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>02 Jan</td>
+              <td>28 Jan</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>    
+            <tr>
+              <th scope="row">14</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>02 Jan</td>
+              <td>16 Jan</td>
+              <td>2026</td>
+              <td>🔵 Returned</td>
+            </tr>                     
+            <tr>
+              <th scope="row">15</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>20 Dec</td>
+              <td>10 Jan</td>
+              <td>2025</td>
+              <td>🔵 Returned</td>
+            </tr>   
+            <tr>
+              <th scope="row">16</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>01 Nov</td>
+              <td>20 Dec</td>
+              <td>2025</td>
+              <td>🔵 Returned</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Nov</td>
+              <td>15 Dec</td>
+              <td>2025</td>
+              <td>🔵 Returned</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>25 Feb</td>
+              <td>30 March</td>
+              <td>2025</td>
+              <td>🔵 Returned</td>
+            </tr>                          
+            
+          </tbody>
+        </table>
+
+      </div>
+  
+
+
+<!-- /* --------------------------------------online book's reading history---------------------------------------------------- */ -->
+<!-- /* --------------------------------------online book's reading history---------------------------------------------------- */ -->
+<!-- /* --------------------------------------online book's reading history---------------------------------------------------- */ -->
+
+
+      <!-- <div class="o-history"> -->
+      <div class="on-history"><h4><i class="fa-solid fa-clock-rotate-left"></i>Online Book's Reading History</h4></div>
+
+      <br><br>
+      <div class="on-table">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+              <th scope="col">S.no</th>
+              <th scope="col">Book Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Started</th>
+              <th scope="col">Completed</th>
+              <th scope="col">Year</th>
+              <th scope="col">Status</th>
+            </tr>           
+          </thead>
+          <tbody>          
+             <tr>
+              <th scope="row">01</th>
+              <td>The tubewell house</td>
+              <td>Fiction</td>
+              <td>20 Feb</td>
+              <td>28 Feb</td>
+              <td>2026</td>
+              <td>📖 Reading</td>
+            </tr>    
+            <tr>
+              <th scope="row">02</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>21 Feb</td>
+              <td>06 March</td>
+              <td>2026</td>
+              <td>⏸️ Paused Reading</td>
+            </tr>                     
+            <tr>
+              <th scope="row">03</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>20 Feb</td>
+              <td>10 March</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>   
+            <tr>
+              <th scope="row">04</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>01 Mrach</td>
+              <td>20 March</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>
+            <tr>
+              <th scope="row">05</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Feb</td>
+              <td>15 March</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>
+            <tr>
+              <th scope="row">06</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>27 Feb</td>
+              <td>30 March</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>    
+             <tr>
+              <th scope="row">07</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>02 Feb</td>
+              <td>28 Feb</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>    
+            <tr>
+              <th scope="row">08</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>01 Feb</td>
+              <td>16 Feb</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>                     
+            <tr>
+              <th scope="row">09</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>30 Jan</td>
+              <td>10 Feb</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>   
+            <tr>
+              <th scope="row">10</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>21 Jan</td>
+              <td>10 Feb</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Jan</td>
+              <td>15 Feb</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>12 Jan</td>
+              <td>30 Jan</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>   
+             <tr>
+              <th scope="row">13</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>02 Jan</td>
+              <td>28 Jan</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>    
+            <tr>
+              <th scope="row">14</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>02 Jan</td>
+              <td>16 Jan</td>
+              <td>2026</td>
+              <td>✅ Completed</td>
+            </tr>                     
+            <tr>
+              <th scope="row">15</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>20 Dec</td>
+              <td>10 Jan</td>
+              <td>2025</td>
+              <td>✅ Completed</td>
+            </tr>   
+            <tr>
+              <th scope="row">16</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>01 Nov</td>
+              <td>20 Dec</td>
+              <td>2025</td>
+              <td>✅ Completed</td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>21 Nov</td>
+              <td>15 Dec</td>
+              <td>2025</td>
+              <td>✅ Completed</td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>25 Feb</td>
+              <td>30 March</td>
+              <td>2025</td>
+              <td>✅ Completed</td>
+            </tr>                          
+            
+          </tbody>
+        </table>
+
+      </div>
+
+  </div>
+
+<hr><hr><hr>
+
+<!-- /* --------------------------------------favourite books---------------------------------------------------- */ -->
+<!-- /* --------------------------------------favourite books---------------------------------------------------- */ -->
+<!-- /* --------------------------------------favourite books---------------------------------------------------- */ -->
+
+    <div class="favourite">
+      <div class="fav-books"><h4 id="simple-list-item-4"><i class="fa-regular fa-heart"></i> Favourite Books</h4></div>
+
+      <br><br>
+      <div class="fav-table">
+        <table class="table table-hover">
+          <thead>
+          <tr>
+              <th scope="col">S.no</th>
+              <th scope="col">Book Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Liked Date</th>
+            </tr>           
+          </thead>
+          <tbody>          
+            <tr>
+              <th scope="row">1</th>
+              <td>Introduction to Algorithms</td>
+              <td>Computer Science</td>
+              <td>15 March</td>
+            </tr>    
+            <tr>
+              <th scope="row">2</th>
+              <td>Harry Potter and the Sorcerer's Stone</td>
+              <td>Fiction</td>
+              <td>01 March</td>
+            </tr>                     
+            <tr>
+              <th scope="row">3</th>
+              <td>Harry Potter and the Philosopher's Stone</td>
+              <td>Fiction</td>
+              <td>24 Feb</td>
+            </tr>   
+            <tr>
+              <th scope="row">4</th>
+              <td>The Waste Land</td>
+              <td>Poetry</td>
+              <td>22 Feb</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Quantitative Aptitude for Competitive Exams</td>
+              <td>Competitive</td>
+              <td>13 Feb</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>The Diary of a Young Girl</td>
+              <td>Non-Fiction</td>
+              <td>02 Feb</td>
+            </tr>                                    
+          </tbody>
+        </table>
+
+      </div>
+
+
+      <!-- ending design -->
+      <div class="design">
+        <img src="/image/line2.jpg" alt="">
+        <h1>...Thank You...</h1>
+      </div>
+      <div class="design2"><img src="/image/line3.jpg" alt=""></div>
+
+
+    </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

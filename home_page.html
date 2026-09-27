@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/home_page.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- books world -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Pirata+One&display=swap"
+    rel="stylesheet">
+  <!-- div2-quote -->
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <!-- be the part of something new -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Hepta+Slab:wght@1..900&family=Limelight&display=swap"
+    rel="stylesheet">
+  <!-- sign up main heading- -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Grenze+Gotisch:wght@100..900&family=Hepta+Slab:wght@1..900&family=Limelight&display=swap"
+    rel="stylesheet">
+  <!-- footer about -->
+   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+   <!-- view details of top rated books -->
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="./image/vdo.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+
+  <!-- ---------------------------------navbar------------------------------------------>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><img src="/image/logo2.avif" alt="logo"> BOOKS WORLD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active nav-element" aria-current="page" href="#"><i class="fa-regular fa-house"></i>HOME</a>
+          </li>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle nav-element" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <i class="fa-solid fa-clover"></i> PAGES
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item btn-login" href="about1.html">About</a></li>
+              <li><a class="dropdown-item btn-login" href="bookstore.html">Books</a></li>
+              <li><a class="dropdown-item btn-login" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle nav-element" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-right-to-bracket"></i> LOGIN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="dropdown-item btn btn-primary  btn-login" data-bs-toggle="modal"
+                    data-bs-target="#user-login"><i class="fa-regular fa-user"></i>
+                    User Login
+                  </button>
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#">
+                  <button type="button" class="dropdown-item btn btn-primary  btn-login" data-bs-toggle="modal"
+                    data-bs-target="#admin-login"><i class="fa-solid fa-user-tie"></i>Admin Login
+                  </button>
+                </a>
+            </ul>
+          </div>
+
+
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle  nav-element" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-user-plus"></i> SIGN UP
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="dropdown-item btn btn-primary btn-login" data-bs-toggle="modal"
+                    data-bs-target="#user-signup"><i class="fa-regular fa-user"></i>
+                    User Sign Up
+                  </button>
+                </a>
+              </li>
+              <li><a class="dropdown-item" href="#">
+                  <button type="button" class="dropdown-item btn btn-primary btn-login" data-bs-toggle="modal"
+                    data-bs-target="#admin-signup" disabled><i class="fa-solid fa-user-tie"></i>
+                    Admin Sign Up
+                  </button>
+                </a>
+            </ul>
+          </div>
+
+
+          <button type="button" class="logout btn ">LOGOUT</button>
+
+          <!------------------------ user login modal-------------- -->
+
+          <div class="modal fade" id="user-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="user-login" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- <div class="modal-header"> -->
+                <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <!-- </div> -->
+                <div class="modal-body">
+
+                  <div class="container-fluid cf d-flex pt-20">
+
+                    <div class="f-img"><img src="/image/login.jpg" alt=""></div>
+                    <div class="fa-info">
+                      <h1><i class="fa-regular fa-user"></i>user login</h1>
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">User name:</label>
+                        <input type="email" class="form-control" id="loginFormControlInput1" placeholder="full name">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">User ID:</label>
+                        <input type="" class="form-control" id="loginFormControlInput1" placeholder="U12345">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="loginFormControlInput1"
+                          placeholder="enter password">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn c-btn-login" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-login"><i class="fa-solid fa-right-to-bracket"></i>
+                      <a class="shortcut" href="user-dashboard.html">LOGIN</a></button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--------------------------- admin login Modal ----------------------------->
+
+          <div class="modal fade" id="admin-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="admin-login" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- <div class="modal-header"> -->
+                <!-- <h1 class="modal-title fs-5" id="admin-loginLabel">Modal title</h1> -->
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <!-- </div> -->
+                <div class="modal-body">
+
+
+                  <div class="container-fluid cf d-flex pt-20">
+
+                    <div class="f-img"><img src="/image/login.jpg" alt=""></div>
+                    <div class="fa-info">
+                      <h1><i class="fa-solid fa-user-tie"></i>Admin login</h1>
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Admin name:</label>
+                        <input type="email" class="form-control" id="loginFormControlInput1" placeholder="full name">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Admin ID:</label>
+                        <input type="" class="form-control" id="loginFormControlInput1" placeholder="A12345">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="loginFormControlInput1"
+                          placeholder="enter password">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn c-btn-login" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-login"><i class="fa-solid fa-right-to-bracket"></i>
+                      <a class="shortcut" href="admin-dashboard.html">LOGIN</a></button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------- user signup Modal --------------------------->
+
+          <div class="modal fade" id="user-signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="user-signup" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <!-- <div class="modal-header"> -->
+                <!-- <h1 class="modal-title fs-5" id="user-signupLabel">Modal title</h1> -->
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <!-- </div> -->
+                <div class="modal-body">
+                  <div class="container-fluid cf d-flex pt-20">
+
+                    <div class="fl-img">
+                      <div class="img1"><img src="/image/signup2.jpg" alt=""></div>
+                      <!-- <div class="img1"><img src="/image/signup3.jpg" alt=""></div> -->
+                    </div>
+
+                    <div class="fl-info">
+                      <h1><i class="fa-regular fa-user"></i>User Signup</h1>
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">User name:</label>
+                        <input type="email" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="enter name">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Create ID:</label>
+                        <input type="" class="form-control s-form" id="loginFormControlInput1" placeholder="A12345">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Contact number:</label>
+                        <input type="number" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="Contact number">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Email address:</label>
+                        <input type="email" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="name@example.com">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Password:</label>
+                        <input type="password" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="enter password">
+                      </div>
+
+
+                      <!-- <div class="mb-3"> -->
+                      <!-- <label for="loginFormControlInput1" class="form-label">Confirm Password:</label> -->
+                      <!-- <input type="password" class="form-control s-form" id="loginFormControlInput1" -->
+                      <!-- placeholder="enter password"> -->
+                      <!-- </div>                              -->
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn c-btn-login" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-login"><i class="fa-solid fa-right-to-bracket"></i>
+                      LOGIN</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--------------admin signup Modal ------------>
+
+          <!-- <div class="modal fade" id="admin-signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="admin-signup" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">-->
+                <!-- <div class="modal-header"> -->
+                <!-- <h1 class="modal-title fs-5" id="admin-signup">Modal title</h1> -->
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <!-- </div> -->
+                <!-- <div class="modal-body">
+                  <div class="container-fluid cf d-flex pt-20">
+
+                    <div class="fl-img">
+                      <div class="img1"><img src="/image/signup2.jpg" alt=""></div>-->
+                      <!-- <div class="img1"><img src="/image/signup3.jpg" alt=""></div> -->
+                    <!-- </div>
+
+
+                    <div class="fl-info">
+                      <h1><i class="fa-solid fa-user-tie"></i>Admin Signup</h1>
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Admin name:</label>
+                        <input type="email" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="enter name">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Create ID:</label>
+                        <input type="" class="form-control s-form" id="loginFormControlInput1" placeholder="A12345">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Contact number:</label>
+                        <input type="number" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="Contact number">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Email address:</label>
+                        <input type="email" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="name@example.com">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="loginFormControlInput1" class="form-label">Password:</label>
+                        <input type="password" class="form-control s-form" id="loginFormControlInput1"
+                          placeholder="enter password">
+                      </div> -->
+
+
+                      <!-- <div class="mb-3"> -->
+                      <!-- <label for="loginFormControlInput1" class="form-label">Confirm Password:</label> -->
+                      <!-- <input type="password" class="form-control s-form" id="loginFormControlInput1" -->
+                      <!-- placeholder="enter password"> -->
+                      <!-- </div>                              -->
+                    <!-- </div>
+                  </div>
+
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn c-btn-login" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-login"><i class="fa-solid fa-right-to-bracket"></i>
+                      LOGIN</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- -------------------------content of video-------------------------- -->
+  <div class="content">
+    <h1>welcome to books world</h1>
+    <p>your digital library experience</p>
+  </div>
+
+  <!-- -------------------------------------stats section------------------------------------------------------------------- -->
+
+  <div class="stats-container">
+    <div class="stats">
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-book"></i></div>
+        <div class="card-body">
+          <h2>1230+</h2>
+          <h4>BOOKS</h4>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="card-body">
+          <h2>689</h2>
+          <h4>AVAILABLE</h4>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-id-card"></i></div>
+        <div class="card-body">
+          <h2>350</h2>
+          <h4>ISSUED</h4>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-users"></i></div>
+        <div class="card-body">
+          <h2>380</h2>
+          <h4>MEMBERS</h4>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-user-plus"></i></div>
+        <div class="card-body">
+          <h2>45</h2>
+          <h4>NEW ARRIVALS</h4>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ------------------------------------about section----------------------------------------------------- -->
+  <div class="about-section">
+    <div class="about-parent">
+      <div class="about">
+        <div class="div0">Be a part of something amazing</div>
+        <div class="div1"><img src="/image/q1.jpg" alt=""></div>
+
+        <div class="div2">
+          <p>The future depends on what you do today...</p>
+        </div>
+
+        <div class="div3"></div>
+        <div class="div4"></div>
+
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------signup section -------------------------------------------------------- -->
+  <div class="signup">
+    <div class="signup-container">
+
+      <h3>Step into a world of knowledge — connect with us and sign up now!</h3><br>
+      <p>Unlock a world of knowledge — sign up now</p>
+      <p>Join us today — it only takes a minute!</p><br>
+
+      <button type="button" class="btn btn-primary btn-signup" data-bs-toggle="modal" data-bs-target="#user-signup">
+       <i class="fa-regular fa-user"></i> User Sign Up
+      </button>
+      <button type="button" class="btn btn-primary btn-signup" data-bs-toggle="modal" data-bs-target="#admin-signup" disabled>
+       <i class="fa-solid fa-user-tie"></i> Admin Sign Up
+      </button>
+
+    </div>
+  </div>
+
+  <!-- -------------------------circle information [most popular types of books]--------------------------- -->
+
+  <div class="circle">
+    <div class="heading">The Most Popular Types of Books :-</div>
+    <div class="container-fluid marketing ">
+      <!-- <div class="marketing1">.</div> -->
+      <div class="row gx-1">
+        <!-- /.col-lg-2 -->
+        <div class="col-lg-2 d-flex flex-column">
+          <img src="/image/fiction.webp" class="rounded-circle d-block" width="200" height="200" alt="image">
+          <h2 class="fw-normal">Fictional books</h2>
+          <p class="mt-auto d-flex justify-content-center"><a class="btn btn-secondary mx-auto" href="bookstore.html">View details
+              »</a></p>
+        </div>
+
+        <!-- /.col-lg-2 -->
+        <div class="col-lg-2 px-1 d-flex flex-column">
+          <img src="/image/non-fic.jpeg" class="rounded-circle d-block" width="200" height="200" alt="image">
+          <h2 class="fw-normal">Non-fictional books</h2>
+          <p class="mt-auto"><a class="btn btn-secondary mx-auto" href="bookstore.html">View details »</a></p>
+        </div>
+
+        <!-- /.col-lg-2 -->
+        <div class="col-lg-2 px-1 d-flex flex-column">
+          <img src="/image/tech.jpg" class="rounded-circle d-block" width="200" height="200" alt="image">
+          <h2 class="fw-normal">Technical books</h2>
+          <p class="mt-auto"><a class="btn btn-secondary mx-auto" href="bookstore.html">View details »</a></p>
+        </div>
+
+        <!-- /.col-lg-2 -->
+        <div class="col-lg-2 px-1 d-flex flex-column">
+          <img src="/image/academic.jpeg" class="rounded-circle d-block" width="200" height="200" alt="image">
+          <h2 class="fw-normal">Academic books</h2>
+          <p class="mt-auto"><a class="btn btn-secondary mx-auto" href="bookstore.html">View details »</a></p>
+        </div>
+
+        <!-- /.col-lg-2 -->
+        <div class="col-lg-2 px-1 d-flex flex-column">
+          <img src="/image/poetry.jpeg" class="rounded-circle d-block" width="200" height="200" alt="image">
+          <h2 class="fw-normal">Autobiography books</h2>
+          <p class="mt-auto"><a class="btn btn-secondary mx-auto" href="bookstore.html">View details »</a></p>
+        </div>
+
+        <!-- /.col-lg-2 -->
+        <div class="col-lg-2 px-1 d-flex flex-column">
+          <img src="/image/magazines.jpg" class="rounded-circle d-block" width="200" height="200" alt="image">
+          <h2 class="fw-normal">Magazine & Journals</h2>
+          <p class="mt-auto"><a class="btn btn-secondary mx-auto" href="bookstore.html">View details »</a></p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------------------top rated books ------------------------------------------------------- -->
+  <div class="category-section">
+    <h1>Top Rated Books :-</h1>
+    <h2></h2>
+
+    <div class="top-rated">
+
+      <div class="top">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn modal-btn button-primary" data-bs-toggle="modal" data-bs-target="#f1">
+          View Details
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="f1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="f1Label" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content m-bg">
+              <!-- <div class="modal-header"> -->
+              <!-- <h1 class="modal-title fs-5" id="f1Label">Fiction Book</h1> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
+              <!-- aria-label="Close"></button> -->
+              <!-- </div> -->
+              <div class="modal-body">
+                <div class="container-fluid cf d-flex pt-20">
+
+                  <div class="f-img"><img src="/image/f1.jpg" alt=""></div>
+
+
+                  <div class="f-info">
+
+
+                    <h1>the fellowship of the ring</h1>
+                    <h3>j.r.r tolkien</h3>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Format:</div>
+                      <div class="col-8">398pages,paperback</div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">First published:</div>
+                      <div class="col-8">July 29,1954</div>
+                    </div>
+
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ISBN:</div>
+                      <div class="col-8">9780618346257</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ASIN:</div>
+                      <div class="col-8">0618346252</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Language:</div>
+                      <div class="col-8">English</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Characters:</div>
+                      <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                        Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                        Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                        Arwen Undómiel, Galadriel, Gollum, Peregrin
+                        Took, Goldberry, Legolas, Sam Gamgee</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Rating:</div>
+                      <div class="col-8 d-flex">
+                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-button btn-info">Read</button>                
+                <button type="button" class="btn c-button btn-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="/image/f1.jpg" alt="">
+
+      </div>
+
+
+      <div class="top">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn modal-btn button-primary" data-bs-toggle="modal" data-bs-target="#f2">
+          View Details
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="f2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="f1Label" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content m-bg">
+              <!-- <div class="modal-header"> -->
+              <!-- <h1 class="modal-title fs-5" id="f2Label">Fiction Book</h1> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
+              <!-- aria-label="Close"></button> -->
+              <!-- </div> -->
+              <div class="modal-body">
+                <div class="container-fluid cf d-flex pt-20">
+
+                  <div class="f-img"><img src="/image/f2.jpg" alt=""></div>
+
+                  <div class="f-info">
+
+                    <h1>the tube well house</h1>
+                    <h3>abhishek choudhary</h3>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Format:</div>
+                      <div class="col-8">398pages,paperback</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">First published:</div>
+                      <div class="col-8">July 29,1954</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ISBN:</div>
+                      <div class="col-8">9780618346257</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ASIN:</div>
+                      <div class="col-8">0618346252</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Language:</div>
+                      <div class="col-8">English</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Characters:</div>
+                      <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                        Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                        Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                        Arwen Undómiel, Galadriel, Gollum, Peregrin
+                        Took, Goldberry, Legolas, Sam Gamgee</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Rating:</div>
+                      <div class="col-8 d-flex">
+                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-button btn-info">Read</button>
+                <button type="button" class="btn c-button btn-dark" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <img src="/image/f2.jpg" alt="">
+
+      </div>
+
+
+      <div class="top">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn modal-btn button-primary" data-bs-toggle="modal" data-bs-target="#f4">
+          View Details
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="f4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="f4Label" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content m-bg">
+              <!-- <div class="modal-header"> -->
+              <!-- <h1 class="modal-title fs-5" id="f4Label">Fiction Book</h1> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
+              <!-- aria-label="Close"></button> -->
+              <!-- </div> -->
+              <div class="modal-body">
+                <div class="container-fluid cf d-flex pt-20">
+
+                  <div class="f-img"><img src="/image/f4.webp" alt=""></div>
+
+                  <div class="f-info">
+
+                    <h1>the bell jar</h1>
+                    <h3>slyvia plath</h3>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Format:</div>
+                      <div class="col-8">398pages,paperback</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">First published:</div>
+                      <div class="col-8">July 29,1954</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ISBN:</div>
+                      <div class="col-8">9780618346257</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ASIN:</div>
+                      <div class="col-8">0618346252</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Language:</div>
+                      <div class="col-8">English</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Characters:</div>
+                      <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                        Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                        Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                        Arwen Undómiel, Galadriel, Gollum, Peregrin
+                        Took, Goldberry, Legolas, Sam Gamgee</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Rating:</div>
+                      <div class="col-8 d-flex">
+                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-button btn-info">Read</button>
+                <button type="button" class="btn c-button btn-dark" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <img src="/image/f4.webp" alt="">
+
+      </div>
+
+
+
+      <div class="top">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn modal-btn button-primary" data-bs-toggle="modal" data-bs-target="#f14">
+          View Details
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="f14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="f14Label" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content m-bg">
+              <!-- <div class="modal-header"> -->
+              <!-- <h1 class="modal-title fs-5" id="f14Label">Fiction Book</h1> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
+              <!-- aria-label="Close"></button> -->
+              <!-- </div> -->
+              <div class="modal-body">
+                <div class="container-fluid cf d-flex pt-20">
+
+                  <div class="f-img"><img src="/image/f14.jpg" alt=""></div>
+
+                  <div class="f-info">
+
+                    <h1>the girl in the house</h1>
+                    <h3>harshvardhan rao</h3>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Format:</div>
+                      <div class="col-8">398pages,paperback</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">First published:</div>
+                      <div class="col-8">July 29,1954</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ISBN:</div>
+                      <div class="col-8">9780618346257</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ASIN:</div>
+                      <div class="col-8">0618346252</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Language:</div>
+                      <div class="col-8">English</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Characters:</div>
+                      <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                        Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                        Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                        Arwen Undómiel, Galadriel, Gollum, Peregrin
+                        Took, Goldberry, Legolas, Sam Gamgee</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Rating:</div>
+                      <div class="col-8 d-flex">
+                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-button btn-info">Read</button>
+                <button type="button" class="btn c-button btn-dark" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <img src="/image/f14.jpg" alt="">
+
+      </div>
+
+
+
+      <div class="top">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn modal-btn button-primary" data-bs-toggle="modal" data-bs-target="#f19">
+          View Details
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="f19" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="f19Label" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content m-bg">
+              <!-- <div class="modal-header"> -->
+              <!-- <h1 class="modal-title fs-5" id="f19Label">Fiction Book</h1> -->
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" -->
+              <!-- aria-label="Close"></button> -->
+              <!-- </div> -->
+              <div class="modal-body">
+                <div class="container-fluid cf d-flex pt-20">
+
+                  <div class="f-img"><img src="/image/f19.webp" alt=""></div>
+
+                  <div class="f-info">
+
+                    <h1>on the open road</h1>
+                    <h3>stuti changle</h3>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Format:</div>
+                      <div class="col-8">398pages,paperback</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">First published:</div>
+                      <div class="col-8">July 29,1954</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ISBN:</div>
+                      <div class="col-8">9780618346257</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">ASIN:</div>
+                      <div class="col-8">0618346252</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Language:</div>
+                      <div class="col-8">English</div>
+                    </div>
+
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Characters:</div>
+                      <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                        Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                        Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                        Arwen Undómiel, Galadriel, Gollum, Peregrin
+                        Took, Goldberry, Legolas, Sam Gamgee</div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-4 fw-bold">Rating:</div>
+                      <div class="col-8 d-flex">
+                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn c-button btn-info">Read</button>
+                <button type="button" class="btn c-button btn-dark" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <img src="/image/f19.webp" alt="">
+      </div>
+    </div>
+
+    <!-----------------------------------------reviews of our users-------------------------------------------------------  -->
+    <div class="review-section">
+      <h1>reviews of our users</h1>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="container py-4">
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3">
+                    <img src="https://i.pravatar.cc/80?img=33" class="rounded-circle mx-auto">                    
+                    <div class="r-info">
+                      <h2>David</h2>
+                      <h3>💖</h3>
+                      <p>
+                        “This Library Management System is very easy to use and saves a lot of time. Finding and issuing
+                        books has become quick and simple. Highly recommended for students!”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=32" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Sunaina</h2>
+                      <h3>💕</h3>
+                      <p>
+                        “I really like the clean design and smooth navigation. Everything is well organized, and I can
+                        easily check book availability anytime.”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="container py-4">
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=7" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Shivansh</h2>
+                      <h3>💝</h3>
+                      <p>
+                        “This system has made managing books so much easier. The search feature works perfectly, and the
+                        overall experience is fast and user-friendly.”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=5" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Rupali</h2>
+                      <h3>❤️</h3>
+                      <p>
+                        “A very helpful platform for book lovers. It keeps track of records efficiently and provides a
+                        hassle-free experience.”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="container py-4">
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=9" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Srishti</h2>
+                      <h3>💖</h3>
+                      <p>
+                        “This Library Management System is extremely easy to use. Searching and issuing books takes only
+                        a few seconds. Highly recommended!”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=8" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Roushan</h2>
+                      <h3>💕</h3>
+                      <p>
+                        “The interface is clean and user-friendly. Managing records and checking availability is now
+                        much faster than before.”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="container py-4">
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=10" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Maahi</h2>
+                      <h3>💝</h3>
+                      <p>
+                        “This Library Management System is very easy to use and saves a lot of time. Finding and issuing
+                        books has become quick and simple. Highly recommended for students!”
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="review-card d-flex p-3 ">
+                    <img src="https://i.pravatar.cc/80?img=45" class="rounded-circle mx-auto">
+                    <div class="r-info">
+                      <h2>Flora</h2>
+                      <h3>💞</h3>
+                      <p>
+                       “I really like the clean design and smooth navigation. Everything is well organized, and I can
+                        easily check book availability anytime.”                       
+                      </p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+<!-- -----------------------------------librarian section-------------------------------------- -->
+<div class="librarian-section">
+  <div class="meet">Meet Our Librarian</div>
+<div id="librarian" class="carousel-slide carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner c-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="container py-4">
+        <div class="row g-3">
+
+          <div class="col-md-12">
+              <div class="r-card d-flex p-3 ">
+                <div class="about1"></div>
+                <div class="about2"></div>
+                <div class="about3"></div>
+                <div class="about4"><img src="/image/author.jpeg" alt=""></div>
+                <div class="l-info">
+                  <h2>rahul verma</h2>
+                  <h3>( head librarian )</h3>
+                   <ul>
+                    <li>Manages the whole library system.</li>
+                    <li>Supervises staff and maintains the book collection.</li>
+
+                    <li class="c-list">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li> 
+                   </ul>                  
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="container py-4">
+        <div class="row g-3">
+
+          <div class="col-md-12">
+              <div class="r-card d-flex p-3 ">
+                <div class="about1"></div>
+                <div class="about2"></div>
+                <div class="about3"></div>
+                <div class="about4"><img src="/image/author1.png" alt=""></div>
+                <div class="l-info">
+                  <h2>neha patel</h2>
+                  <h3>( Assistant Librarian )</h3>
+                   <ul>
+                    <li>Helps readers find books and provides guidance in the library.</li>
+                    <li>Maintains records of books and assists in daily library operations.</li>
+
+                    <li class="c-list">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>                    
+                   </ul>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="container py-4">
+        <div class="row g-3">
+
+          <div class="col-md-12">
+              <div class="r-card d-flex p-3 ">
+                <div class="about1"></div>
+                <div class="about2"></div>
+                <div class="about3"></div>
+                <div class="about4"><img src="/image/author-w.jpg" alt=""></div>
+                <div class="l-info">
+                  <h2>Anita Sharma</h2>
+                  <h3>( Catalog Librarian )</h3>
+                   <ul>
+                    <li>Organizes and categorizes books in the library database.</li>
+                    <li>Updates book details such as author, category, and edition.</li>
+
+                    <li class="c-list">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>                     
+                   </ul>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="container py-4">
+        <div class="row g-3">
+
+          <div class="col-md-12">
+              <div class="r-card d-flex p-3 ">
+                <div class="about1"></div>
+                <div class="about2"></div>
+                <div class="about3"></div>
+                <div class="about4"><img src="/image/author-m1.jpg" alt=""></div>
+                <div class="l-info">
+                  <h2>Aman Gupta</h2>
+                  <h3>( Circulation Librarian )</h3>
+                   <ul>
+                    <li>Manages book issuing and returning process.</li>
+                    <li>Keeps track of borrowed books and due dates.</li>
+
+                    <li class="c-list">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>                     
+                   </ul>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item">
+      <div class="container py-4">
+        <div class="row g-3">
+
+          <div class="col-md-12">
+              <div class="r-card d-flex p-3 ">
+                <div class="about1"></div>
+                <div class="about2"></div>
+                <div class="about3"></div>
+                <div class="about4"><img src="/image/author-m.jpg" alt=""></div>
+                <div class="l-info">
+                  <h2>bhaskar mahto</h2>
+                  <h3>( Digital Library Manager )</h3>
+                   <ul>
+                    <li>Maintains the online library system and digital resources.</li>
+                    <li>Updates new books and manages the website database.</li>
+
+                    <li class="c-list">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>                     
+                   </ul>
+                </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev c-prev" type="button" data-bs-target="#librarian" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next c-next" type="button" data-bs-target="#librarian" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- ----------------------------------------contact us--------------------------------------------------------- -->
+
+<div class="contact-section">
+  <p>“Have any query? Feel free to contact us — we're always here to help you anytime.”</p>
+  <a href="contact.html" class="contact-btn">contact us</a>
+</div>
+
+
+</div>
+
+<!-- ----------------------------------------footer-section------------------------------------------------------- -->
+ <div class="footer-section">
+
+    <div class="foot1">
+      <div class="f-logo"><img src="/image/logo2.avif" alt=""></div>
+      <div class="f-quote">
+        <ul>
+            <li><p>Everything you need for better future and success has already been written. And guess what? all you have to do is go to the library</p></li>
+            <!-- <li><p>A library is the hospital for the mind</p></li> -->
+            <!-- <li><p>Read.Learn.Grow</p></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot2">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="bookstore.html">Books</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+        <li><p>Read.Learn.Grow</p></li>
+      
+    </div>
+
+    <div class="foot3">
+      <h3>Library Services</h3>
+      <ul>
+        <li>Book search</li>
+        <li>Online Reading</li>
+        <li>Book Categories</li>
+        <li>Reader Reviews</li>
+      </ul>
+      <div class="timing">   
+        <h3>Working Hour</h3>
+          <ul>
+            <li>Monday - Friday : 9:00 AM - 6:00 PM</li>
+            <li>Saturday : 10:00 AM - 4:00 PM</li>
+          </ul>
+      </div>      
+    </div>
+
+    <div class="foot4">
+      <h3>Contacts</h3>
+      <ul><div class="contact">
+          <li><h4>Address: </h4></li>
+              <p>Morabadi,Ranchi-834008,Jharkhand,India</p>
+          <li><h4>Email:</h4> </li>
+              <p>rcrprincipal@gmail.com</p>
+          <li><h4>Contact:</h4></li> 
+              <p>[ 0651-2233803 ] and [ 4356-8765430 ]</p>
+          <li><h4>Website:</h4></li>
+              <p>www.ranchicollegeranchi.org</p>
+
+          <li class="f-list">
+            <a href="#"><i class="category-sec fa-brands fa-facebook"></i></a> 
+            <a href="#"><i class="category-sec fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="category-sec fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="category-sec fa-brands fa-youtube"></i></a>
+          </li>                     
+      </ul>
+    </div>
+
+ </div>
+
+<div class="copy-right">
+  <hr>
+  <p> © 2026 Library Management System. All Rights Reserved.</p>
+</div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

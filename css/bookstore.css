@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.photo{
+    height:620px;
+    width: 1536px;
+    margin: 0px;
+    padding: 0px;
+    border-top: 3px solid rgb(171, 130, 25);
+}
+.photo img{
+    height: 520px;
+    width: 1536px; 
+    border-bottom: 4px solid rgb(248, 179, 5);
+}
+
+
+
+
+.book h1{
+    color: white;
+    font-size: 126px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 10px 10px 25px rgb(4, 4, 4);
+    position: absolute;
+    z-index: 1;
+    top: 350px;
+    right: 50px;
+}
+.book h3{
+    color: rgb(12, 12, 12);
+    font-size: 23px;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 2px 15px rgb(135, 132, 132);
+    position: absolute;
+    z-index: 1;
+    top: 570px;
+    right: 50px;
+}
+.overlay{ 
+    position: absolute; 
+    margin-top: 7px;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 69.3%; 
+    border-top: 3px solid rgb(171, 130, 25);
+    border-bottom: 3px solid rgb(248, 179, 5);
+    background: rgba(0,0,0,0.3); 
+    z-index: 0; 
+}
+/*  */
+/* ----------------------------------------------------navbar-------------------------------------------------------------- */
+.navbar{
+    margin-top: -600px;
+    margin-bottom: 20px;
+    border-top: 2px solid rgb(248, 179, 5);
+    border-bottom: 2px solid rgb(248, 179, 5);
+}
+.container-fluid{
+    background-color: rgba(6, 59, 88, 0.529);
+}
+/* ----logout button---- */
+.logout{
+    color: white ;
+    background-image: linear-gradient(to bottom,rgb(185, 14, 14),red);
+    font-size: 19px;
+    font-weight: 600;
+    transition: background-image 2s ease;
+}
+.logout:hover{
+    color: whitesmoke;
+    background-image: linear-gradient(to top,rgb(124, 30, 6),orange);
+}
+
+
+.navbar-nav{
+    display:flex;
+    gap: 10px;
+}
+.navbar-brand{
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 37px;
+    text-shadow: 5px 4px 5px rgb(9, 10, 10);
+}
+/*----------- home,books,login.....---- */
+.nav-element{
+    font-size: 16px;
+    font-weight: 600;
+}
+.nav-element:hover{
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,rgb(67, 203, 213),rgba(32, 143, 190, 0.288));
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    
+}
+
+/* --------------button of modal---------------- */
+.btn-login{
+    background-color: #3b5a7b;
+    border: 2px solid black;
+    transition: all 1s ease;
+}
+.btn-login:hover{
+    background-image: radial-gradient(circle,#42a0bd,#206276);
+    border: 2px solid rgb(78, 59, 10);
+    transform: translateY(-5px);
+}
+
+
+/*------ logo ---------*/
+.navbar-brand img{
+    height: 65px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+/* -----------------------------------types of books------------------------------------------------------------------- */
+
+.types-container{
+    padding: 30px;
+    padding-top: 100px;
+    margin-top: 400px;
+    background-color: rgb(249, 250, 251);
+}
+
+.types{
+    display: flex;
+}
+/* types of books like fiction,academic etc. */
+.type{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid goldenrod;
+    box-shadow: 5px 5px 20px grey;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.t-img img{
+    height: 490px;
+    width: 290px;
+    border-radius: 15px;
+    /* object-fit: cover; */
+}
+
+.t-info{
+    height: 491px;
+    width: 287px;
+    padding:20px;
+    border-radius: 14px;
+    background-color: rgba(245, 247, 248, 0.507);
+    /* box-shadow: 10px 10px 20px rgb(143, 197, 236) inset, -10px -10px 20px rgb(9, 75, 123) inset; */
+    /* box-shadow: 10px 10px 20px rgba(103, 88, 9, 0.718) inset, -10px -10px 20px rgba(125, 111, 17, 0.411) inset; */
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    position: absolute;  
+    bottom: -101%;   
+    transition: 3s;
+}
+.t-info h3{
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+.t-info p{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(13, 13, 13);
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.type:hover .t-info{
+    bottom: 0;
+}
+
+/* ---------------carousel-------------------------- */
+.carousel-item{
+    width: 1150px;
+    height: 500px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-image: linear-gradient(to top left ,rgba(11, 111, 144, 0.244),rgba(11, 111, 144, 0),rgba(11, 111, 144, 0.244)); */
+    background-image: linear-gradient(to top left ,rgba(233, 190, 89, 0.244),rgba(11, 111, 144, 0),rgba(114, 93, 8, 0.244));
+    border-radius: 20px;
+}
+
+.carousel-control-prev span {
+	background: goldenrod !important;
+    margin-right: 80px;
+    height: 90px;
+}
+.carousel-control-next span {
+	background: goldenrod !important;
+    margin-left: 140px;
+    height: 90px;
+}
+
+
+/* ------------------cards of carousel-------------- */
+.container{
+    margin-top: 10px;
+    box-sizing: border-box;
+
+/* .card{ */
+    /* height: 420px; */
+/* } */
+}
+/* .p-3{
+    transition: transform 1s ease;
+}
+.p-3:hover{
+    transform: translateY(-20px);
+} */
+
+.card{
+    box-shadow: none;
+}
+.card:hover{
+    box-shadow: 7px 7px 10px rgb(44, 43, 43),-7px -7px 10px rgb(44, 43, 43);
+}
+.c-img{
+    height: 320px;
+    width: 224px; 
+    margin-left: 4px; 
+    border-radius: 5px;
+    overflow: hidden;  
+}
+.card img{
+    height: 320px;
+    width: 224px;
+    transition: transform 1s ease;
+
+}
+.col-md-3:hover img{
+    transform: scale(1.15);
+}
+
+.type-books{
+    border-radius: 20px;
+}
+
+
+/* -------------------------------------------------------modal------------------------------------------------------ */
+
+.like1{
+    position: absolute;
+    right: 1.5vw;
+    top: 48vh;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+
+    font-size: 25px;
+    margin-right: -5px;
+}
+/* .like:hover{
+    font-size: 34px;
+} */
+
+/*.fa-heart{
+    font-size: 25px;
+    margin-right: 3px;
+    margin-left: 8px;
+    transition: all 0.2s ease;
+} */
+/* .fa-heart:hover{
+    color: red;
+    font-size: 28px;
+} */
+.modal-btn{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+    margin-top: 10px;
+    margin-left: 15.5px;
+    margin-bottom: 6px;
+    width: 180px;
+    height: 40px;
+    /* font-size: 21px; */
+    background-image: linear-gradient(45deg,rgba(161, 102, 31, 0.862),rgb(224, 174, 113));
+    border: 1.4px solid rgb(105, 68, 9);
+    transition: all 0.4s ease;
+}
+.modal-btn:hover{
+    background-image: radial-gradient(circle,rgb(230, 190, 104),rgb(64, 47, 9));
+    border: 2px solid rgb(63, 47, 6);
+    transform: scale(1.04);
+    color: black;
+   
+}
+
+.c-button {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    
+    width: 224px;
+    height: 40px;
+    background-image: linear-gradient(to top,rgba(23, 92, 126),rgb(122, 203, 248,0.777));
+    border: 1.4px solid rgb(3, 60, 100);
+    transition: all 0.4s ease;
+}
+.c-button:hover{
+    transform: scale(1.04);
+    background-image: radial-gradient(circle,rgb(104, 186, 230),rgb(9, 27, 64)); 
+    border: 2px solid rgb(4, 48, 96);
+    color: rgb(4, 4, 4);
+   
+} 
+
+.star{
+    margin-left: 5px;
+    font-size: 20px;
+    color: goldenrod;
+}
+
+.f-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-img img{
+    border: 3px solid goldenrod;
+    box-shadow: 5px 5px 15px grey;
+}
+.f-info{
+    padding-left: 30px;
+}
+.f-info h1{
+    text-transform: capitalize;
+    text-align: center;  
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal; 
+    color: rgb(116, 77, 25);  
+}
+
+.f-info h3{
+    text-transform: capitalize; 
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    text-align: center;  
+}
+.m-bg{
+    /* background-image: linear-gradient(to bottom right,rgb(235, 235, 187),beige); */
+    box-shadow: 15px 15px 28px rgb(241, 237, 212) inset;
+    border: 3px solid goldenrod;
+}
+.cf{
+    background-image: linear-gradient(to bottom right,rgb(247, 247, 236),beige);
+    text-align: left;
+
+}
+
+.modal{
+    transform: none !important;
+}

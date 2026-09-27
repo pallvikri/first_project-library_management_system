@@ -1,0 +1,1441 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bookstore.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Grenze+Gotisch:wght@100..900&family=Hepta+Slab:wght@1..900&family=Limelight&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <!-- types of books -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+
+<body>
+  <div class="photo">
+    <img src="/image/book2.jpg" alt="">
+  </div>
+  <div class="book">
+    <h1>The Collection</h1>
+    <h3>Every book is a new journey. Dive into stories, facts, and discoveries. Turn pages, turn ideas into reality.</h3>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- ---------------------------------navbar------------------------------------------>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#"><img src="/image/logo2.avif" alt="logo"> BOOKS WORLD</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active nav-element" aria-current="page" href="home_page.html"><i
+                class="fa-regular fa-house"></i>HOME</a>
+          </li>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle nav-element" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <i class="fa-solid fa-clover"></i> PAGES
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item btn-login" href="about1.html">About</a></li>
+              <li><a class="dropdown-item btn-login" href="bookstore.html">Books</a></li>
+              <li><a class="dropdown-item btn-login" href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+
+          <button type="button" class="logout btn ">LOGOUT</button>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- -------------------------------types of books--------------------------------------------------- -->
+  <div class="types-container">
+
+    <!-- -------fiction books------------- -->
+    <div class="types">
+
+      <div class="type">
+        <div class="t-img"><img src="/image/fiction.webp" alt=""></div>
+        <div class="t-info">
+          <h3>fiction books</h3>
+          <p>Fiction Books are stories created from the imagination of the author. These
+            include novels, short stories, fantasy, mystery, and adventure books. Fiction books are
+            meant
+            for entertainment and sometimes to teach moral lessons. They allow readers to explore new
+            worlds, characters, and ideas beyond real life.</p>
+        </div>
+
+      </div>
+
+      <div class="type-books">
+        <div id="fiction" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row g-3">
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f1.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="f1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="f1Label" aria-hidden="true">
+                        <div class="modal-dialog  modal-lg modal-dialog-centered">
+                          <div class="modal-content m-bg">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="f1Label">Fiction Book</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid cf d-flex pt-20">
+                                
+                                <div class="f-img"><img src="/image/f1.jpg" alt=""></div>
+
+                                <div class="f-info">
+
+                                  <h1>the fellowship of the ring</h1>
+                                  <h3>j.r.r tolkien</h3>
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Format:</div>
+                                    <div class="col-8">398pages,paperback</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">First published:</div>
+                                    <div class="col-8">July 29,1954</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ISBN:</div>
+                                    <div class="col-8">9780618346257</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ASIN:</div>
+                                    <div class="col-8">0618346252</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Language:</div>
+                                    <div class="col-8">English</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Characters:</div>
+                                    <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                                                      Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                                                      Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                                                      Arwen Undómiel, Galadriel, Gollum, Peregrin
+                                                      Took, Goldberry, Legolas, Sam Gamgee</div>
+                                  </div>  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Rating:</div>
+                                    <div class="col-8 d-flex">
+                                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>                
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn c-button btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f3.jpg" alt="..."> </div>  
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f3">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="f3" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="f3Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content m-bg">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="f3Label">Fiction Book</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid cf d-flex pt-20">
+                                
+                                <div class="f-img"><img src="/image/f3.jpg" alt=""></div>
+
+                                <div class="f-info">
+
+                                  <h1>that night</h1>
+                                  <h3>nidhi upadhyay</h3>
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Format:</div>
+                                    <div class="col-8">398pages,paperback</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">First published:</div>
+                                    <div class="col-8">July 29,1954</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ISBN:</div>
+                                    <div class="col-8">9780618346257</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ASIN:</div>
+                                    <div class="col-8">0618346252</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Language:</div>
+                                    <div class="col-8">English</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Characters:</div>
+                                    <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                                                      Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                                                      Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                                                      Arwen Undómiel, Galadriel, Gollum, Peregrin
+                                                      Took, Goldberry, Legolas, Sam Gamgee</div>
+                                  </div>  
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Rating:</div>
+                                    <div class="col-8 d-flex">
+                                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>                
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn c-button  btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f2.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>               
+                    </div>
+                  </div>
+
+                   <div class="col-md-3">
+                   <div class="card text-center p-3">
+                     <div class="c-img"><img src="/image/f4.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                   </div>
+                   </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f17.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>                                    
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f14.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f15.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>                    
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/f19.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div> 
+                      <button type="button" class="btn c-button btn-info">Read</button>                                         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#fiction"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#fiction"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-----------------------------non-fiction books---------------------------- -->
+    <div class="types">
+
+
+      <div class="type">
+
+        <div class="t-img"><img src="/image/non-fic.jpeg" alt=""></div>
+        <div class="t-info">
+          <h3>Non-fiction books</h3>
+          <p>Non-Fiction Books contain real facts, information, and true stories. These
+            include biographies, autobiographies, history books, self-help guides, and informational texts.
+            Non-fiction books are used to learn about real events, people, and knowledge in various
+            fields.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ------------------------ -->
+      <div class="type-books">
+        <div id="non-fiction" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row g-3">
+
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf-1.jpg" alt="..."></div>
+
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#nf1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="nf1" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="nf1Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content m-bg">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="nf1Label">Non-Fiction Book</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                              <div class="container-fluid cf d-flex pt-20">
+                                
+                                <div class="f-img"><img src="/image/nf-1.jpg" alt=""></div>
+
+                                <div class="f-info">
+
+                                  <h1>Before We Were Yours</h1>
+                                  <h3>Lisa Wingate</h3>
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Format:</div>
+                                    <div class="col-8">398pages,paperback</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">First published:</div>
+                                    <div class="col-8">July 29,1954</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ISBN:</div>
+                                    <div class="col-8">9780618346257</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ASIN:</div>
+                                    <div class="col-8">0618346252</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Language:</div>
+                                    <div class="col-8">English</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Characters:</div>
+                                    <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                                                      Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                                                      Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                                                      Arwen Undómiel, Galadriel, Gollum, Peregrin
+                                                      Took, Goldberry, Legolas, Sam Gamgee</div>
+                                  </div>  
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Rating:</div>
+                                    <div class="col-8 d-flex">
+                                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>                                      
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn c-button btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf2.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#nf2">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="nf2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="nf2Label" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                          <div class="modal-content m-bg">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="nf2Label">Non-Fiction Book</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container-fluid cf d-flex pt-20">
+                                
+                                <div class="f-img"><img src="/image/nf2.webp" alt=""></div>
+
+
+                                <div class="f-info">
+
+                                  <h1>the greatest beer run ever</h1>
+                                  <h3>john j.t.molloy</h3>
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Format:</div>
+                                    <div class="col-8">398pages,paperback</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">First published:</div>
+                                    <div class="col-8">July 29,1954</div>
+                                  </div>
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ISBN:</div>
+                                    <div class="col-8">9780618346257</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">ASIN:</div>
+                                    <div class="col-8">0618346252</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Language:</div>
+                                    <div class="col-8">English</div>
+                                  </div>
+                                  
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Characters:</div>
+                                    <div class="col-8">Frodo Baggins, Meriadoc Brandybuck, Gandalf,
+                                                      Aragorn, Gimli, Boromir, Bilbo Baggins, Tom
+                                                      Bombadil, Rúmil, Saruman, Elrond Half-elven,
+                                                      Arwen Undómiel, Galadriel, Gollum, Peregrin
+                                                      Took, Goldberry, Legolas, Sam Gamgee</div>
+                                  </div>  
+
+                                  <div class="row mb-2">
+                                    <div class="col-4 fw-bold">Rating:</div>
+                                    <div class="col-8 d-flex">
+                                        <div class="star" id="star1"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star2"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star3"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star4"><i class="fa-solid fa-star"></i></div>
+                                        <div class="star" id="star5"><i class="fa-solid fa-star"></i></div>                
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn c-button  btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf3.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf4.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf5.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>  
+                      <button type="button" class="btn c-button btn-info">Read</button>                   
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf6.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf8.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/nf9.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div> 
+                      <button type="button" class="btn c-button btn-info">Read</button>                    
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#non-fiction"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#non-fiction"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+    <!--------------------------academic books-------------------->
+    <div class="types">
+
+      <div class="type">
+        <div class="t-img"><img src="/image/academic.jpeg" alt=""></div>
+        <div class="t-info">
+          <h3>Academic books</h3>
+          <p>Academic books are scholarly texts written for students and researchers. They provide reliable,
+            subject-specific knowledge, follow a formal style, and are widely used in schools, colleges, and
+            universities to support learning, teaching, and research through structured content and verified
+            information.
+          </p>
+        </div>
+      </div>
+
+      <div class="type-books">
+        <div id="academic" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/rs10.jpeg"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/maths10.jpeg"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/bst.jpeg"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/chempt1,12.jpeg"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/geo9.jpg"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/his.jpeg"></div>
+                       <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/his8.webp"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/eco.jpeg"></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#academic"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#academic"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!----------------------magzines and journals-------------------------  -->
+    <div class="types">
+
+      <div class="type">
+        <div class="t-img"><img src="/image/magazines.jpg" alt=""></div>
+        <div class="t-info">
+          <h3>Magazines and Journals</h3>
+          <p>Magazines and Journals are periodicals published weekly, monthly, or quarterly.
+            Magazines usually contain articles, stories, and pictures on various topics like news,
+            entertainment, fashion, or hobbies. Journals are more academic and contain research papers
+            and articles for scholars and professionals.</p>
+        </div>
+      </div>
+
+      <div class="type-books">
+        <div id="magazines" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row g-3">
+
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg1.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg2.webp" alt=""></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg3.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg4.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg5.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg6.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg7.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/mg8.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#magazines"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#magazines"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------technical books--------------------------------- -->
+    <div class="types">
+      <div class="type">
+        <div class="t-img"><img src="/image/tech.jpg" alt=""></div>
+        <div class="t-info">
+          <h3>TECHNICAL BOOKS</h3>
+          <p class="card-text">Technical Books provide detailed information on specialized subjects like
+            engineering, programming, medicine, and information technology. These books are used by
+            students and professionals to learn specific skills and stay updated with the latest knowledge in
+            their fields.</p>
+        </div>
+      </div>
+
+      <div class="type-books">
+        <div id="technical" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row g-3">
+
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t7.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t1.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t2.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t3.jpg" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t4.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t5.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t6.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/t8.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#technical"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#technical"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- --------------------------poetry books---------------------------------- -->
+
+    <div class="types">
+      <div class="type">
+        <div class="t-img"><img src="/image/poetry.jpeg" alt=""></div>
+        <div class="t-info">
+          <h3>POETRY BOOKS</h3>
+          <p>Poetry books are collections of poems that express emotions, thoughts, and experiences through rhythmic
+            language, imagery, and literary devices. They reflect personal feelings, culture, and imagination, allowing
+            readers to connect deeply with human emotions and enjoy creative expression in artistic form.
+        </div>
+      </div>
+
+      <div class="type-books">
+        <div id="poetry" class="carousel slide" data-bs-ride="carousel">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="container py-4">
+                <div class="row g-3">
+
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p1.jpg" alt="..."></div>
+                       <!-- <img src="/image/p1.jpg" alt="..."> -->
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p2.jpg" alt=""></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p3.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p4.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="container py-4">
+                <div class="row g-3">
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p5.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like">❤️</div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p6.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react d-flex">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p7.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <div class="react">
+                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      </div>
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card text-center p-3">
+                      <div class="c-img"><img src="/image/p8.webp" alt="..."></div>
+                      <!-- Button trigger modal -->
+                      <!-- <div class="react d-flex"> -->
+                        <!-- <div class="like1"><i class="fa-regular fa-heart"></i></div> -->
+                        <button type="button" class="btn modal-btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#f1">
+                          View Details
+                        </button>
+                      <!-- </div> -->
+                      <button type="button" class="btn c-button btn-info">Read</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#poetry"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#poetry"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
