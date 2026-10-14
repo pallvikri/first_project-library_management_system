@@ -137,7 +137,7 @@
     position: absolute;
     top: -130px;
     border-radius: 200px;
-    background-image: url("/image/lib1.jpg");
+    background-image: url("../image/lib1.jpg");
     background-size: cover;
     /* background-position: center; */
 
